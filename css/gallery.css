@@ -38,6 +38,14 @@
   }
 }
 
+.sandColor {
+  color: var(--white-color);
+}
+
+.balckText {
+  color: #1c2b39 !important;
+}
+
 .video-icon {
   position: absolute;
   top: 50%;
@@ -81,7 +89,6 @@
   color: #fff;
   text-align: center;
   font-size: larger;
-
 }
 
 .tablink {
@@ -92,4 +99,74 @@
   font-weight: bolder;
   color: var(--primary-color) !important;
   transition: all 0.3s ease;
+}
+/* Info Icon positioning */
+.info .fa-info {
+  margin: 5px auto;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  z-index: 12;
+  transition: opacity 0.3s ease;
+  border: 1px solid #000;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Profile content hidden initially */
+.profile-content {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  z-index: 10;
+  opacity: 0; /* Initially transparent */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition for both opacity and movement */
+}
+
+.profile-content p {
+  font-size: 0.9em;
+  color: white;
+}
+/* Display overlay with animation */
+.info.active .profile-content {
+  display: block;
+  opacity: 1; /* Fully visible */
+  transform: translateY(0); /* No shift */
+}
+
+/* Angle-down icon initially hidden */
+.info .fa-angle-down {
+  display: none;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  z-index: 15;
+}
+
+/* Show angle-down when active */
+.info.active .fa-angle-down {
+  display: block;
+}
+
+/* Smooth transition for info icon hiding */
+.info.active .fa-info {
+  opacity: 0; /* Fade out info icon when the content appears */
+}
+
+.info {
+  background-color: white;
 }

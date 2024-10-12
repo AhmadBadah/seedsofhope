@@ -32,24 +32,24 @@ https://www.tooplate.com/view/2119-gymso-fitness
 
 :root {
   /* Primary Beach Colors */
-  --primary-color: #0077B6; /* Deep Ocean Blue */
-  --secondary-color: #FFA07A; /* Sunset Orange */
+  --primary-color: #4A90E2; /* Deep Ocean Blue */
+  --secondary-color: #FF9966; /* Sunset Orange */
   
   /* Neutral Colors */
-  --white-color: #ffffff;
-  --dark-color: #171819; /* For dark text or backgrounds */
+  --white-color: #F2E6C9;
+  --dark-color: #2E4057; /* For dark text or backgrounds */
   
   /* Background Colors */
-  --background-color: #F5D6B1; /* Sand color */
+  --background-color: #F4D3A4; /* Pale Sand color */
   --about-bg-color: #87CEEB; /* Sky Blue */
   
   /* Text Colors */
-  --gray-color: #909090;
-  --link-color: #404040;
-  --p-color: #666262; /* Paragraph text color */
+  --gray-color: #B0A898;
+  --link-color: #333333;
+  --p-color: #D0D6E0; /* Paragraph text color */
   
   /* Accent Colors */
-  --hover-color: #93E9BE; /* Sea Foam Green for hover effects */
+  --hover-color: #82E1B0; /* Sea Foam Green for hover effects */
   --coral-color: #FF6F61; /* Coral for accent elements */
 
   --base-font-family: "Plain", sans-serif;
@@ -391,10 +391,10 @@ a:focus {
   -----------------------------------------*/
 
 .class-info {
-  background: var(--white-color);
+  background: #fff;
   box-shadow: 6px 0 38px rgba(20, 20, 20, 0.1);
   border-radius: 0 0 2px 2px;
-  padding: 1rem 2rem;
+  padding: 1rem 2rem 0rem 2rem;
   position: relative;
 }
 
@@ -495,7 +495,7 @@ a:focus {
 }
 
 .about-working-hours {
-  border-left: 2px solid;
+  border-left: 2px var(--white-color) solid;
   padding-left: 3.5rem;
 }
 
