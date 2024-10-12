@@ -638,11 +638,12 @@ button#submit-button:hover {
 }
 
 .coustom_icon {
+  filter: brightness(0) saturate(100%) invert(91%) sepia(21%) saturate(301%) hue-rotate(346deg) brightness(101%) contrast(90%);
   transition: all 0.3s ease;
+  object-fit: contain;
 }
 .coustom_icon:hover {
-  filter: brightness(0) saturate(100%) invert(21%) sepia(89%) saturate(3486%)
-    hue-rotate(4deg) brightness(106%) contrast(88%);
+  filter: brightness(0) saturate(100%) invert(47%) sepia(84%) saturate(788%) hue-rotate(189deg) brightness(95%) contrast(87%);
 }
 
 .black {

@@ -145,7 +145,7 @@
 }
 
 /* Angle-down icon initially hidden */
-.info .fa-angle-down {
+.info .fa-times {
   display: none;
   position: absolute;
   top: 10px;
@@ -158,7 +158,7 @@
 }
 
 /* Show angle-down when active */
-.info.active .fa-angle-down {
+.info.active .fa-times {
   display: block;
 }
 
