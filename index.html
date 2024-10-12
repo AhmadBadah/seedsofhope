@@ -50,10 +50,10 @@
     <meta property="og:image" content="images/logo.png" />
     <meta
       property="og:url"
-      content="https://ahmadbadah.github.io/messagebottle"
+      content="https://ahmadbadah.github.io/seedsofhope"
     />
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Message In A Bottle" />
+    <meta property="og:site_name" content="seeds of hope" />
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -78,7 +78,7 @@
         j.async = true;
         j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
         f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-N6XGBNTQ");
+      })(window, document, "script", "dataLayer", "GTM-N7P9X5RW");
     </script>
     <!-- End Google Tag Manager -->
 
@@ -95,7 +95,7 @@
         t.src = "https://www.clarity.ms/tag/" + i;
         y = l.getElementsByTagName(r)[0];
         y.parentNode.insertBefore(t, y);
-      })(window, document, "clarity", "script", "n9riydpehp");
+      })(window, document, "clarity", "script", "ohh9cj1w85");
     </script>
     <!-- End clarity -->
   </head>
@@ -104,7 +104,7 @@
     <!-- Google Tag Manager (noscript) -->
     <noscript
       ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-N6XGBNTQ"
+        src="https://www.googletagmanager.com/ns.html?id=GTM-N7P9X5RW"
         height="0"
         width="0"
         style="display: none; visibility: hidden"
@@ -627,84 +627,28 @@
         </div>
       </div>
     </footer>
-
-    <!-- SCRIPTS -->
     <script type="module">
       // Import the functions you need from the SDKs you need
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
-      import {
-        getFirestore,
-        addDoc,
-        collection,
-        serverTimestamp,
-      } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-analytics.js";
       // TODO: Add SDKs for Firebase products that you want to use
       // https://firebase.google.com/docs/web/setup#available-libraries
 
       // Your web app's Firebase configuration
       // For Firebase JS SDK v7.20.0 and later, measurementId is optional
       const firebaseConfig = {
-        apiKey: "AIzaSyC6SaOofj2icI6P0usfdMelrXUdVx9Zjwo",
-        authDomain: "donation-bef57.firebaseapp.com",
-        projectId: "donation-bef57",
-        storageBucket: "donation-bef57.appspot.com",
-        messagingSenderId: "847602059327",
-        appId: "1:847602059327:web:70b8ea4a88b57d8c30508a",
-        measurementId: "G-HSGQBVJSYR",
+        apiKey: "AIzaSyD4ey9yV0f7CXLOhpStRK0wLkuWT8sRxHc",
+        authDomain: "arwagfm.firebaseapp.com",
+        projectId: "arwagfm",
+        storageBucket: "arwagfm.appspot.com",
+        messagingSenderId: "1009027220442",
+        appId: "1:1009027220442:web:21279253041829d1a376e3",
+        measurementId: "G-4004C8QJ77",
       };
 
       // Initialize Firebase
       const app = initializeApp(firebaseConfig);
       const analytics = getAnalytics(app);
-      const db = getFirestore(app);
-
-      // Function to log button click event
-      function logCustomEvent(eventName, eventParams) {
-        // logEvent(analytics, eventName, eventParams);
-      }
-
-      // Add event listener to the button after DOM is fully loaded
-      document.addEventListener("DOMContentLoaded", function () {
-        const button = document.getElementById("submit-button");
-        button.addEventListener("click", function () {
-          const emailInput = document.getElementById("email").value;
-          logCustomEvent("send_msg", { email: emailInput });
-          alert("Event tracked with email: " + emailInput);
-        });
-      });
-
-      // Submit form data to Firestore
-      document
-        .getElementById("contactForm")
-        .addEventListener("submit", function (e) {
-          e.preventDefault();
-
-          var name = document.getElementById("name").value;
-          var email = document.getElementById("email").value;
-          var message = document.getElementById("message").value;
-
-          addDoc(collection(db, "contacts"), {
-            name: name,
-            email: email,
-            message: message,
-            timestamp: serverTimestamp(),
-          })
-            .then(() => {
-              alert("Message sent successfully!");
-              document.getElementById("contactForm").reset();
-            })
-            .catch((error) => {
-              console.error("Error adding document: ", error);
-              alert("Error sending message. Please try again.");
-            });
-        });
-
-      // const container = document.querySelector("#bootstrap-image-gallery");
-      // window.lightGallery(container, {
-      //   selector: ".lg-item",
-      //   plugins: [lgZoom, lgThumbnail],
-      // });
     </script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-gallery/2.41.0/js/jquery.blueimp-gallery.min.js"></script>
